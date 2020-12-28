@@ -3,9 +3,29 @@
 
 using namespace std;
 
+/*
+A program simulating a "cd" Unix command.
 
-// string get_invalid_path(string path, string temp, int i);
-// int count_parent_directories(string path);
+The simulated command takes two path strings from the command line and prints 
+either a new path or an error. The first path is a current directory. 
+The second path is a new directory. To make it simple let's assume that 
+a directory name can only contain alphanumeric characters. A single dot (".") 
+indicates a current directory, and the two dots ("..") indicate a step to a 
+previous directory, up from the current one. A single forward slash "/" indicates 
+a root directory. Multiple consecutive slashes are treated as equivalent to a single one.
+
+    Typical usage:
+    
+        From command line:
+        $ g++ main.cpp -o mycd
+        $ ./mycd <current directory> <new directory>
+
+    Example:
+
+        $ ./mycd /abc/def ../klm
+        ./abc/klm
+*/
+
 int main(int argc, char* argv[])
 {
     string final_path;  // path of the new directory after "cd" command

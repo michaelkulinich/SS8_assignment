@@ -2,7 +2,6 @@ import unittest
 import mycd_python as cd
 
 class TestMycd(unittest.TestCase):
-    # Edit the DOC!
     def test1(self):
         """# mycd / abc -> /abc"""
 
