@@ -6,10 +6,11 @@ The first path is a current directory. The second path is a new directory. To ma
 The program needs to check that the new directory path is valid without relying on any OS system call such as chdir() for verification, to construct a new path, and print it out. Since it is a simulator, it should be OS-independent.
 
 ## Getting Started
-These instructions will get you a the project up and running on your local machine. See deployment for notes on how to deploy the project on your system. The test automation frameworks used are **gtest** for the C++ program and **unittest** for the Python program 
+These instructions will get you a the project up and running on your local machine. See deployment for notes on how to deploy the project on your system. The test automation frameworks used are **gtest** for the C++ program and **unittest** for the Python program.
 
 ### Requirements
-- C++ compiler and Python3
+- std::C++11 or newer
+- Python3
 - gtest needs to be installed for test automation [instructions](https://github.com/google/googletest/tree/master/googletest)
 - Python unittest
 
