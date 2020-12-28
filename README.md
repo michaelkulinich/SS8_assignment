@@ -9,7 +9,7 @@ The program needs to check that the new directory path is valid without relying 
 These instructions will get you a the project up and running on your local machine. See deployment for notes on how to deploy the project on your system. The test automation frameworks used are **gtest** for the C++ program and **unittest** for the Python program.
 
 ### Requirements
-- std::C++11 or newer
+- std::c++11 or newer
 - Python3
 - gtest needs to be installed for test automation [instructions](https://github.com/google/googletest/tree/master/googletest)
 - Python unittest
@@ -39,11 +39,14 @@ python -m unittest -v test
 ```
 g++ main.cpp -o mycd
 ```
+- If compile error, add option -std=c++11
+```
+g++ main.cpp -std=c++11 -o mycd
+```
 - Run
 ```
 ./mycd <current directory> <new directory>
 ```
-
 **For a Python program**
 - Run
 ```
