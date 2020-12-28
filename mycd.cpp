@@ -20,7 +20,7 @@ a root directory. Multiple consecutive slashes are treated as equivalent to a si
         mycd(current_dir, new_dir)
         
     Example:
-    
+
         mycd("/abc/def", "..") -> "/abc"
 */
 string mycd(string current_dir, string new_dir);
@@ -34,10 +34,12 @@ string remove_slashes(string path);
 // also if the path consists of an invalid directory or
 // a directory that is non alphanumeric, return a message saying file or dir not found 
 // otherwise return the updated path of the new directory
+// ex: "/abc/def////..///." -> "/abc"
 string clean_path(string path);
 
 // split the path string by '/' into a vector.
 // return the vector
+// ex: "/abc/def" -> {"abc", "def"}
 vector<string> split_by_slash(string path);
 
 // MAIN STRING MANIPULATION //
@@ -201,8 +203,6 @@ bool clean_path_vect(vector<string> &vect)
             }
             i++;
         }
-        
-
     }
     return true;
 }
