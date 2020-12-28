@@ -163,16 +163,10 @@ bool clean_path_vect(vector<string> &vect)
 {
     size_t i = 0;
     while (i < vect.size()) {
-     
-    // for (int i = 0; i != path_vect.size(); ++i) {
-        // just one '.'
+        // if single '.' then dont change the path
+        // just remove this index from list
         if (vect.at(i) == ".") {
-                if (i != 0) {
-                    vect.erase(vect.begin() + i);
-                }
-                else {
-                    vect.erase(vect.begin() + i);
-                }
+            vect.erase(vect.begin() + i);
         }
 
         // if two '.' then go up  directory
