@@ -167,10 +167,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-
-
-
-# python -m unittest test
-# python test.py
-# how can I make this work on windows
