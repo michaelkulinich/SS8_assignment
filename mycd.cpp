@@ -85,7 +85,7 @@ string remove_slashes(string path)
     updated_path += path[0];
 
     // iterate through path and remove multiple consecutive slashes
-    for (int i = 1; i < path.size(); i++) {
+    for (size_t i = 1; i < path.size(); i++) {
         if (path[i] == '/') {
             if (updated_path[updated_path.size() -1] != '/') {
                 // updated_path = updated_path + '/';
@@ -141,7 +141,7 @@ vector<string> split_by_slash(string path)
     string temp = "";  
 
     // start at 1 because 0th element SHOULD ALWAYS BE '/'
-    for (int i = 1; i < path.size(); ++i) {
+    for (size_t i = 1; i < path.size(); ++i) {
         if (path[i] == '/') {
             split_path.push_back(temp);
             temp = ""; 
@@ -161,7 +161,7 @@ vector<string> split_by_slash(string path)
 // MAIN STRING MANIPULATION
 bool clean_path_vect(vector<string> &vect)
 {
-    int i = 0;
+    size_t i = 0;
     while (i < vect.size()) {
      
     // for (int i = 0; i != path_vect.size(); ++i) {
@@ -193,7 +193,7 @@ bool clean_path_vect(vector<string> &vect)
         else {
             // check that each element is alphanumeric, if not clear the vector
             // and add the error message
-            for (int j = 0; j < vect.at(i).size(); ++j) {
+            for (size_t j = 0; j < vect.at(i).size(); ++j) {
                 if (!isalnum(vect.at(i)[j])) {
                     string invalid_entry = vect.at(i) + ": No such file or directory";
                     vect.clear();
