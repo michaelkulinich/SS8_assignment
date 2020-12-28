@@ -65,6 +65,7 @@ OK
 ```
 ### Running C++ individually
 ```
+[mk@amk SS8_assignment]$ g++ main.cpp -o mycd
 [mk@amk SS8_assignment]$ ./mycd /abc/def ../klm
 /abc/klm
 ```
