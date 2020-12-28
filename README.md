@@ -49,6 +49,7 @@ g++ main.cpp -o mycd
 ```
 python3 mycd_python.py <current directory> <new directory>
 ```
+## [Sample output](sample_output.md)
 
 ### Source code
 - mycd.cpp
