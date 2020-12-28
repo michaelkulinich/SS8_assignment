@@ -34,8 +34,7 @@ python -m unittest -v test
 ```
 ## Run Individually
 **For C++ program**
-Used g++ on Linux Fedora
-- Compile
+- Compile (used g++ in this example)
 ```
 g++ main.cpp -o mycd
 ```
