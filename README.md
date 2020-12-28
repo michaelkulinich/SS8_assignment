@@ -15,7 +15,7 @@ These instructions will get you a the project up and running on your local machi
 
 # Compilation and Deployment
 ## Test Automation
-**For C++ program**
+**For a C++ program**
 - make a new directory named 'build' and cd into it
 ```
 mkdir build
@@ -28,12 +28,12 @@ make
 ./runtest
 ```
 
-**For Python program**
+**For a Python program**
 ```
 python -m unittest -v test
 ```
 ## Run Individually
-**For C++ program**
+**For a C++ program**
 - Compile (used g++ in this example)
 ```
 g++ main.cpp -o mycd
@@ -43,7 +43,7 @@ g++ main.cpp -o mycd
 ./mycd <current directory> <new directory>
 ```
 
-**For Python program**
+**For a Python program**
 - Run
 ```
 python3 mycd_python.py <current directory> <new directory>
