@@ -70,11 +70,7 @@ string mycd(string current_dir, string new_dir)
         final_path = remove_slashes(combined); // remove consecutive multiple slashes
     }
 
-    // get the final path for new directory after 
-    // we remove all unecessary single dots and two dots from path
-    // as well as check for invalid entry and print out invalid entry
-    // this is where the majority string manipulation takes place
-    // ex: "/abc/def////..///." -> "/abc"
+    // get the final path for new directory
     final_path = clean_path(final_path);
     return final_path;
 }
