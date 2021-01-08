@@ -126,7 +126,7 @@ def clean_path_list(path_list):
         # if the index consists of a single dot
         # then we don't do anything to change the path
         # and remove this index from list
-        if path_list[i] == '.':
+        if path_list[i] == '.' or path_list[i] == '':
             if i != 0:
                 path_list.pop(i)
                 i -= 1
