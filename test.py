@@ -90,6 +90,13 @@ class TestMycd(unittest.TestCase):
         new_dir = "..klm"
         result = cd.mycd(current_dir, new_dir)
         self.assertEqual(result, "..klm: No such file or directory")
+    def test12(self):
+        """# mycd /a/b/c d/ -> /a/b/c/d"""
+
+        current_dir = "/a/b/c"
+        new_dir = "d/"
+        result = cd.mycd(current_dir, new_dir)
+        self.assertEqual(result, "/a/b/c/d")
 
         
         
